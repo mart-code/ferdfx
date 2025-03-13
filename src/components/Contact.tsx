@@ -18,24 +18,28 @@ const Contact = () => {
           your in no more than 24 hours
         </p>
       </div>
-      <form className="flex flex-col items-start w-full shadow-lg p-10">
+      <form className="flex flex-col items-start w-full shadow-lg p-10" method="POST" name="contact" data-netlify='true'>
         <input
           type="text"
           placeholder="Name"
+          name="name"
           className="border-b-1 border-solid border-gray-500 outline-none focus:outline-none p-2 w-full mb-2"
         />{" "}
         <br />
         <input
           type="email"
+          name="email"
           className="border-b-1 border-solid border-gray-500 outline-none focus:outline-none p-2 w-full mb-2"
           placeholder="Email"
         />{" "}
         <br />
         <input
           type="text"
+          name="message"
           className="border-b-1 border-solid border-gray-500 outline-none focus:outline-none p-2 w-full"
           placeholder="Message"
         />
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit" className="btn btn-primary mt-5">
           <ArrowRight className="arrow w-5 h-5" /> Send message
         </button>
