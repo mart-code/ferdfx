@@ -1,0 +1,71 @@
+import FooterLogo from "../assets/ferdfx white.png";
+import { Facebook, Instagram, Twitter } from "lucide-react";
+
+const Footer = () => {
+  return (
+    <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10 w-full min-h-20 bg-black p-20">
+      <div className="flex flex-col gap-4 basis-[100%] w-full md:basis-[40%] text-white items-start">
+        <img
+          src={FooterLogo}
+          className="w-50 p-0 m-0 object-fill"
+          alt="FerdFX Academy Logo "
+        />
+        <p className="">
+          Office: Ajebamidele Line 1, <br /> Ibadan Road, from FerdFX academy{" "}
+          <br />
+          Ile-Ife, Osun State
+        </p>
+        <div className="flex flex-col justify-start">
+          <p>Follow us on Social Media</p>
+          <div className="flex gap-4">
+            <a href="#">
+              <Facebook color="#fff" />
+            </a>
+            <a href="#">
+              <Instagram color="#fff" />
+            </a>
+            <a href="#">
+              <Twitter color="#fff" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <ul className="flex flex-col gap-2 basis-[100%] w-full md:basis-[20%] text-white text-left items-start">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#mentor">Mentorship</a>
+        </li>
+        <li>
+          <a href="#resources">Resources</a>
+        </li>
+        <li>
+          <a href="#">Risk Calculator</a>
+        </li>
+        <li>
+          <a href="#support">Support</a>
+        </li>
+      </ul>
+      <div className="flex items-start flex-col w-full basis-[100%] md:basis-[40%]">
+        <h2 className="text-5xl font-semibold text-left overflow-hidden text-white">
+          Let's Keep you Informed
+        </h2>
+        <p className="text-white">Subscribe to our Newsletter</p>
+        <input
+          type="text"
+          className="border-b border-white text-white w-full focus:outline-none outline-none mt-5"
+          placeholder="Your Email"
+        />
+        <button type="submit" className="btn btn-primary mt-5 text-center">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
