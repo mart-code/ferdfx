@@ -1,8 +1,7 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 * {
-  font-family: "Poppins";
+  font-family: "General Sans", sans-serif;
 }
 
 .btn {
